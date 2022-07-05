@@ -1,0 +1,437 @@
+@charset 'utf-8';
+@import url(./reset.css);
+
+
+
+
+
+
+body>* {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #FFEFEF;
+}
+
+/*ban*/
+body .ben {
+    width: 100%;
+    height: 50px;
+}
+
+.ben img {
+    width: 100%;
+    height: 50px;
+}
+
+/*ban*/
+/*hd*/
+.thd>div {
+    background-color: #224289;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.thd div a img {
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+header .gnb {
+    display: flex;
+    padding: 4rem 0;
+}
+
+
+
+header div .hd {
+    position: absolute;
+    right: 0%;
+}
+
+header div .hd a {
+    border: 1px solid lightcoral;
+    color: white;
+    right: 50px;
+    margin: 10px;
+    font-size: 0.75rem;
+}
+
+.gnb::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    height: 0;
+    transition: .3s;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 5555;
+}
+
+.gnb:hover::before {
+    height: 220px;
+}
+
+.gnb {
+    display: flex;
+}
+
+.sub {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+    z-index: 5555;
+}
+
+.gnb:hover .sub {
+    height: 220px;
+}
+
+.gnb a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.gnb .sub a {
+    color: #224289;
+}
+
+.gnb li ul img {
+
+    width: 100%;
+    height: 180px;
+}
+
+/*hd*/
+/*ban start*/
+.ban {
+    height: 600px;
+    position: relative;
+    background-color: #FED928;
+}
+
+.ban div a img {
+    width: 80%;
+    height: 600px;
+    position: absolute;
+}
+
+.ban div .ban1 {
+    position: absolute;
+    right: 14px;
+    top: 20%;
+    display: grid;
+}
+
+.ban div .ban1 .title {
+    border: 1px solid blue;
+    background-color: white;
+    line-height: 30px;
+    padding-right: 1rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.ban .ban2 img {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+}
+
+.ban .ban2 img {
+    left: 0%;
+    top: 0;
+    width: 80%;
+    opacity: 0;
+}
+
+/*ban end*/
+
+/*menu start*/
+
+.menu {
+    /* border: 1px solid rebeccapurple; */
+    background-color: #F9EBDA;
+    height: 600px;
+    position: relative;
+}
+
+.menu .menu1 ul {
+    /* border:1px solid rgb(180, 61, 61); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.menu .menu1 ul a {
+    /* border: 1px solid black; */
+    font-size: 2rem;
+}
+
+
+.ice img {
+    width: 80%;
+}
+
+.ice ul {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ice ul li {
+    /* border: 1px solid lightgreen; */
+    padding-top: 4rem;
+}
+
+.ice ul a {
+    /* border: 1px solid rgb(180, 61, 61); */
+    margin: 50px;
+}
+
+/*menu end*/
+
+/*new start*/
+.new {
+    background-color: #FC9EB2;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.new div {
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 30px;
+}
+
+.new img {
+    /* border: 1px solid  rebeccapurple; */
+    width: 30%;
+    position: absolute;
+}
+
+.new img:nth-of-type(2) {
+    left: 24%;
+    top: 18%;
+}
+
+.new img:nth-of-type(1) {
+    left: 15%;
+    bottom: 25%;
+}
+
+.new img:nth-of-type(3) {
+    left: 5%;
+    top: 12%;
+}
+
+.new div span {
+    font-size: 2rem;
+    color: white;
+    line-height: 100px;
+}
+
+
+.new div p,
+strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 30px;
+}
+
+.new div strong {
+    color: #224289;
+}
+
+/*new end*/
+
+/*sns start*/
+.sns {
+    height: 800px;
+}
+
+.sns .wrap {
+    border: 1px solid lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 15vh);
+}
+
+.wrap>div {
+    border: 1px solid black;
+    margin: 1px;
+}
+
+.wrap div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.box1 {
+    grid-column: 2/5;
+    grid-row: 2/4;
+}
+
+.box2 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.box3 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.box4 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.box5 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+.box6 {
+    grid-column: 5/6;
+    grid-row: 5/6;
+}
+
+/*sns end*/
+
+/*nav start*/
+.nav {
+    height: 800px;
+    position: relative;
+}
+
+.nav .map img {
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+.nav .map a {
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    background-color: white;
+    top: 35%;
+    z-index: 130;
+    left: 38%;
+    border-radius: 10px;
+}
+
+.nav .map .nav1 {
+    position: absolute;
+    left: 30%;
+    z-index: 120;
+    top: 15%;
+    font-size: 2rem;
+}
+
+.nav .map .nav1>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navv img {
+    width: 10%;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    z-index: 120;
+    border-radius: 10px;
+}
+
+.nav .navvv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    background-color: #FFDECF;
+    padding: 50px;
+}
+
+/*nav end*/
+/*b2b start*/
+.b2b {
+    border: 1px solid rebeccapurple;
+    height: 600px;
+    background-color: #FEF4F7;
+    position: relative;
+}
+
+.b2b h1 {
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    position: absolute;
+    left: 35%;
+}
+
+.b2b .b2bnav {
+    position: absolute;
+    top: 30%;
+    height: 300px;
+    left: 10%;
+}
+
+.b2b .b2bnav ul li {
+    border: 1px solid green;
+    margin: 20px;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+.b2b .b2bli {}
+
+.b2b .b2bli ul {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    width: 600px;
+}
+
+.b2b .b2bli ul li a {
+    font-size: 1.2rem ;
+
+
+}
+
+
+/*b2b end*/
